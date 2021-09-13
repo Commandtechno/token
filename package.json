@@ -1,14 +1,15 @@
 {
   "name": "discord-tokens",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Utilities for managing and using Discord tokens",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "local": "npm run build && npm i . -g"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/commandtechno/tokens.git"
+    "url": "git+https://github.com/commandtechno/token.git"
   },
   "keywords": [
     "discord",
@@ -19,9 +20,9 @@
   "author": "Commandtechno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/commandtechno/tokens/issues"
+    "url": "https://github.com/commandtechno/token/issues"
   },
-  "homepage": "https://github.com/commandtechno/tokens#readme",
+  "homepage": "https://github.com/commandtechno/token#readme",
   "devDependencies": {
     "@types/node": "^16.9.1"
   },

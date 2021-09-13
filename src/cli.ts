@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { execSync, spawn } from "child_process";
 
 import { filterValid } from "./validate";
@@ -18,7 +20,7 @@ if (!tokens.length) {
 }
 
 const desc = "Tokens reported by " + name + " cli";
-const flags = ["filename tokens.txt", "desc '" + desc + "'"];
+const flags = ["public", "filename tokens.txt", "desc '" + desc + "'"];
 
 const shell = { shell: "powershell" };
 const options = ["gist", "create", ...flags.map(f => "--" + f)];
